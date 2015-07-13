@@ -184,6 +184,7 @@ class Api {
                 'code'       => $code,
                 'message'    => $message,
                 'data'       => $data,
+                'error'       => false,
                 'pagination' => null
             );
 
@@ -192,6 +193,7 @@ class Api {
             {
                 $response = array_merge($response, $data);
             }
+            $response = array_merge($response, $data);
 
             // Remove empty array.
             $response = array_filter($response, function($value)
@@ -200,7 +202,7 @@ class Api {
             });
 
             // Remove empty data.
-            if ($this->config['removeEmptyData'] && empty($response['data']))
+            if (empty($response['data']))
             {
                 unset($response['data']);
             }
