@@ -1,5 +1,5 @@
 {
-    "name": "teepluss/api",
+    "name": "elijan/laravel-api",
     "description": "Laravel 4 Internal Request (HMVC)",
     "keywords": ["laravel", "laravel4", "restful", "api", "hmvc"],
     "homepage": "https://github.com/teepluss/laravel4-api",
