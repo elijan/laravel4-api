@@ -268,10 +268,10 @@ class Api {
             $originalRoute = $this->router->getCurrentRoute();
 
             // Masking route to allow testing with PHPUnit.
-            if ( ! $originalRoute instanceof Route)
+            /*if ( ! $originalRoute instanceof Route)
             {
                 $originalRoute = new Route(new \Symfony\Component\HttpFoundation\Request());
-            }
+            }*/
 
             // Create a new request to the API resource
             $request = $this->request->create($uri, strtoupper($method), $parameters);
